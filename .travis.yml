@@ -1,4 +1,7 @@
 language: objective-c
+osx_image: xcode9.2
+xcode_project: TravisCi.xcodeproj # path to your xcodeproj folder
+xcode_scheme: TravisCi
 cache:
   - .cocoapods
 before_install:
@@ -7,6 +10,8 @@ before_install:
   - ls -al
   - pod install
   - pod update
+script: 
+  - swift build
 after_script:
   - ls -al ../
   - 
