@@ -1,7 +1,12 @@
 language: objective-c
+cache:
+  - cocoapods
 before_install:
   - gem install cocoapods
   - pod repo update
   - pod repo add specs https://github.com/davidthorn/specs.git
+  - ls -al
   - pod install
+after_script:
+  - ls -al
   
