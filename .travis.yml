@@ -18,3 +18,8 @@ after_script:
   - pod repo push specs
   - echo $(pwd)
   
+deploy:
+  email: $email
+  github-token: $token  # Set in travis-ci.org dashboard, marked secure
+  on:
+    branch: master

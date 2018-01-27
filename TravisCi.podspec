@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "TravisCi"
-  s.version      = "0.1.2"
+  s.version      = "0.1.3"
   s.summary      = "A summary of your framework"
 
   s.description  = <<-DESC
