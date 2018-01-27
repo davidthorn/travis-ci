@@ -2,6 +2,7 @@ language: objective-c
 osx_image: xcode9.2
 xcode_project: TravisCi.xcodeproj # path to your xcodeproj folder
 xcode_scheme: TravisCi
+xcode_sdk: iphonesimulator11.2
 cache:
   - .cocoapods
 before_install:
@@ -13,7 +14,7 @@ before_install:
 script: 
   - swift build
 after_script:
-  - ls -al ../
+  - ls -al 
   - 
   - echo $(pwd)
   
