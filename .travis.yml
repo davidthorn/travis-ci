@@ -3,3 +3,5 @@ before_install:
   - gem install cocoapods
   - pod repo update
   - pod repo add specs https://github.com/davidthorn/specs.git
+  - pod install
+  
