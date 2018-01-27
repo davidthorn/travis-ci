@@ -2,13 +2,13 @@ language: objective-c
 cache:
   - .cocoapods
 before_install:
-  - mkdir my-working-directory
   - gem install cocoapods
   - pod repo add specs https://github.com/davidthorn/specs.git
   - ls -al
   - pod install
   - pod update
 after_script:
-  - ls -al
+  - ls -al ../
+  - 
   - echo $(pwd)
   
