@@ -3,3 +3,4 @@ osx_image: xcode9.2
 before_install:
 	- mkdir $david
 	- ls -al
+	- touch "hello" >> $david
